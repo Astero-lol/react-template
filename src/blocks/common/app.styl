@@ -1,4 +1,31 @@
 @import "nib"
 global-reset()
 
-@import "./vars.styl"
+/*** --- Mixins and variables --- ***/
+@import 'variables.styl'
+@import 'easings.styl'
+@import 'mixins.styl'
+
+/*** --- Document --- ***/
+html,
+body {
+  height: 100%
+  background: bg-color
+  color: text-color
+  font: normal font-size/line-height font-family
+  -webkit-text-size-adjust: 100%
+  faster()
+}
+
+
+/*** --- Links --- ***/
+a {
+  color: link-color
+  text-decoration: none
+}
+
+.page
+  position: relative
+  overflow: hidden
+  min-width: 320px
+  min-height: 100%
